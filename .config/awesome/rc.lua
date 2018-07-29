@@ -53,6 +53,8 @@ terminal = "lxterminal"
 browser = "epiphany"
 gvim = "gvim"
 abaquscae = "sh /home/fe/CAE"
+ansys_launcher = "sh /home/fe/Ansys_Launcher"
+ansys_wb = "sh /home/fe/Ansys_WB"
 filemanager = "pcmanfm"
 editor = os.getenv("EDITOR") or "gvim"
 editor_cmd = editor
@@ -114,6 +116,8 @@ mymainmenu = awful.menu({ items = { { "Browser", browser },
                                     { "File Manager", filemanager} ,
                                     { "GVim", gvim} ,
                                     { "ABAQUS CAE", abaquscae} ,
+                                    { "ANSYS Launcher", ansys_launcher} ,
+                                    { "ANSYS Workbench", ansys_wb} ,
                                     { "Terminal", terminal} ,
                                     { "Debian", debian.menu.Debian_menu.Debian },
                                     { "awesome", myawesomemenu, beautiful.awesome_icon },
